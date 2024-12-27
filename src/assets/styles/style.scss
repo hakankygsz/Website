@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        background: #000;
+        color: #fff;
+
+        font-family: "Poppins", serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        font-family: inherit;
+        cursor: pointer;
+    }
+}

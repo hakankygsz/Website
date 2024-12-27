@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",                            // ES5 hedefi, eski tarayıcılar için uyumlu
+    "lib": [
+      "dom",                                    // DOM API'leri
+      "dom.iterable",                           // DOM iterable objeleri
+      "esnext"                                   // En son ECMAScript özellikleri
+    ],
+    "allowJs": true,                            // JavaScript dosyalarını da işleme al
+    "skipLibCheck": true,                       // Kütüphane tür kontrollerini atla
+    "esModuleInterop": true,                    // ES module ve CommonJS uyumu
+    "allowSyntheticDefaultImports": true,       // Varsayılan import'lar
+    "strict": true,                             // TypeScript'in katı tür kontrolünü etkinleştir
+    "forceConsistentCasingInFileNames": true,   // Dosya adlarında büyük/küçük harf uyumunu zorunlu kılar
+    "noFallthroughCasesInSwitch": true,         // Switch-case yapılarında 'fallthrough' (atlama) hatalarını engeller
+    "module": "esnext",                         // ES Modules kullan
+    "moduleResolution": "node",                 // Node.js modül çözümleme
+    "resolveJsonModule": true,                  // JSON dosyalarını modül olarak al
+    "isolatedModules": true,                    // Her dosyayı bağımsız modül olarak kabul et
+    "noEmit": true,                             // Derleme sırasında çıkış dosyası üretme
+    "jsx": "react-jsx"                          // React 17 ve sonrası JSX dönüşümü
+  },
+  "include": [
+    "src"                                       // `src` klasöründeki dosyalar derlenir
+  ],
+  "exclude": [
+    "node_modules",                             // `node_modules` dahil edilmez
+    "build",                                    // `build` klasörü dahil edilmez
+    "dist"                                      // `dist` klasörü dahil edilmez
+  ]
+}
