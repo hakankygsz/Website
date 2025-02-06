@@ -1,0 +1,20 @@
+@use './variables' as variables;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        background: variables.$color-bg;
+        color: variables.$color-text;
+
+        font-family: variables.$font-family;
+        font-size: variables.$font-size;
+        font-weight: variables.$font-weight;
+    }
+}
