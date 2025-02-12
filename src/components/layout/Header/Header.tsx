@@ -27,15 +27,13 @@ const Header = () => {
   const toggleMenu = useCallback((state) => setIsMobileMenuOpen(state), []);
 
   return (
-    <header className="sticky top-0 w-full h-20 flex items-center z-30 border-b border-neutral-900">
+    <header className="sticky top-0 w-full h-20 flex items-center justify-center z-30 border-b border-neutral-900">
       <div className="absolute inset-0 backdrop-blur-md"></div>
       <div className="relative max-w-screen-2xl w-full mx-auto flex justify-between items-center px-8 md:px-10">
-        {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={Logo} alt="Logo" className="w-full h-10 object-cover" />
+          <img src={Logo} alt="Logo" className="w-full h-12 lg:h-10 object-cover" />
         </Link>
 
-        {/* Desktop Menü */}
         <nav className="hidden md:flex gap-8">
           {menuItems.map((item, index) => (
             <Link
@@ -52,13 +50,11 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobil Menü Butonu */}
         <button className="md:hidden text-4xl" onClick={() => toggleMenu(true)}>
           <RxHamburgerMenu />
         </button>
       </div>
-
-      {/* Mobil Menü Bileşeni */}
+      
       <MobileMenu isOpen={isMobileMenuOpen} toggleMenu={toggleMenu} />
     </header>
   );

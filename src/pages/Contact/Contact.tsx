@@ -37,7 +37,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <form onSubmit={formik.handleSubmit} className="w-full max-w-2xl border border-neutral-950 p-6 lg:p-8 rounded-lg shadow-lg flex flex-col gap-6">
+            <form onSubmit={formik.handleSubmit} className="w-full max-w-2xl border border-neutral-900 shadow-lg p-6 lg:p-8 rounded-lg flex flex-col gap-6">
                 <div className="flex flex-col">
                     <label htmlFor="name" className="text-lg font-medium text-gray-300 mb-2">Adınız</label>
                     <input

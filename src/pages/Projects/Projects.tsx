@@ -19,7 +19,7 @@ const Projects = () => {
                     <div key={index} className="border border-neutral-900 p-4 flex flex-col items-center justify-between rounded-lg min-h-[400px]">
                         <ul className='flex items-center justify-center gap-2 pb-4 flex-wrap'>
                             {project.technologies.map((v, i) => (
-                                <li key={i} className='h-10 px-2 flex items-center justify-center rounded-lg hover:ring duration-300 cursor-pointer border border-neutral-950'>
+                                <li key={i} className='h-10 px-2 flex items-center justify-center rounded-lg hover:ring duration-300 cursor-pointer border border-neutral-800'>
                                     {v}
                                 </li>
                             ))}
@@ -28,7 +28,7 @@ const Projects = () => {
                         <p className="text-sm text-gray-400 mb-6 text-center flex-grow">{project.description}</p>
                         <ul className='flex items-center justify-center gap-4 pb-4'>
                             {project.links.map((v, i) => (
-                                <Link to={v.url} key={i} className='h-14 w-14 flex items-center justify-center rounded-lg text-2xl cursor-pointer border border-neutral-950 hover:ring duration-300'>
+                                <Link to={v.url} key={i} className='h-14 w-14 flex items-center justify-center rounded-lg text-2xl cursor-pointer border border-neutral-800 hover:ring duration-300'>
                                     {v.Logo}
                                 </Link>
                             ))}
