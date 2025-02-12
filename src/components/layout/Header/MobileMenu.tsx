@@ -20,9 +20,9 @@ const menuItems = [
 const MobileMenu = ({ isOpen, toggleMenu }: { isOpen: boolean; toggleMenu: (state: boolean) => void }) => {
   return (
     <div className={`md:hidden fixed inset-0 z-30 duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-      <div className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-md" onClick={() => toggleMenu(false)}></div>
+      <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm" onClick={() => toggleMenu(false)}></div>
 
-      <div className="fixed right-0 top-0 w-3/4 h-full bg-black bg-opacity-90 border-l border-neutral-900 z-50">
+      <div className="fixed right-0 top-0 w-3/4 h-full bg-black bg-opacity-80 border-l border-neutral-900 z-50">
         <div className="h-20 flex items-center justify-end px-4 border-b border-neutral-900">
           <button className="text-gray-100 text-5xl" onClick={() => toggleMenu(false)}>
             <IoCloseOutline />

@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "../../../assets/images/Logo.svg";
 import { IoLogoAmplify } from "react-icons/io5";
 import MobileMenu from "./MobileMenu";
 
@@ -31,7 +32,7 @@ const Header = () => {
       <div className="relative max-w-screen-2xl w-full mx-auto flex justify-between items-center px-8 md:px-10">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <IoLogoAmplify className="text-4xl" />
+          <img src={Logo} alt="Logo" className="w-full h-10 object-cover" />
         </Link>
 
         {/* Desktop Menü */}

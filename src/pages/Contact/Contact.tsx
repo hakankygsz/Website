@@ -31,7 +31,7 @@ const Contact = () => {
     return (
         <div className="w-full min-h-screen flex flex-col items-center bg-black text-white p-3 lg:p-6">
             <div className="text-center mb-10">
-                <h1 className="text-5xl font-extrabold mb-4 text-indigo-400">İletişim</h1>
+                <h1 className="text-5xl font-extrabold mb-4 text-neutral-300">İletişim</h1>
                 <p className="text-lg max-w-xl text-gray-300">
                     Bize ulaşmak için aşağıdaki formu doldurun, en kısa sürede size geri dönüş yapacağız.
                 </p>
@@ -89,7 +89,7 @@ const Contact = () => {
                     ) : null}
                 </div>
                 
-                <button type="submit" className="w-full bg-indigo-800 hover:bg-indigo-600 text-white font-bold py-3 rounded-lg duration-300">
+                <button type="submit" className="w-full border-2 border-neutral-950 hover:ring text-white text-2xl font-semibold py-3 rounded-lg duration-300">
                     Gönder
                 </button>
             </form>

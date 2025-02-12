@@ -47,7 +47,7 @@ const Home = () => {
         </AnimatedText>
 
         <motion.button
-          className="py-3 px-8 border border-neutral-900 duration-300 font-semibold rounded-lg shadow-md"
+          className="py-3 px-8 border border-neutral-900 hover:ring duration-300 font-semibold rounded-lg shadow-md"
           whileHover={{ scale: 1.05 }}
         >
           Daha Fazla Bilgi
